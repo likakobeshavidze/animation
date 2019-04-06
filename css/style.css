@@ -1,0 +1,94 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+body {
+	padding: 2%;
+	background-color: lightblue;
+	text-align: center;
+}
+.box{
+	position: relative;
+}
+.clouds{
+transform: translate(-20%,-20%);
+transition: all 0.3s ease 0.3s; 
+z-index: 30;
+
+}
+.butterfly{ width: 100px;
+transform: translate(-20%,-20%);
+transition: all 0.3s ease 0.3s; 
+z-index: 30;}
+.clouds:hover
+{
+	
+	top: 100px;
+	right: 100px;
+	transform: rotate(360deg);
+    animation: clouds 5s infinite;
+
+}
+..butterfly:hover{
+	top: 100px;
+	right: 100px;
+	transform: rotate(90deg);
+    animation: butterfly 25s infinite;}
+
+
+.clouds:hover
+{
+	
+	top: 50px;
+	left:  100px;
+	transform: rotate(90deg);
+}
+
+.d-block {
+	display: inline-block;
+}
+
+
+}
+.absolute {
+position: absolute;}
+.wave{
+transform: rotate(0deg);
+
+}
+.yellow{
+  width: 100px;
+  padding: 50px 0;
+  line-height: 0;
+  margin: 60px auto;
+  background-color: yellow;
+  color: white;
+  border-radius: 50%;
+  animation: yellow 4s infinite;
+  z-index: 31;
+
+}﻿
+ .wave1:hover
+ {   top: 100px;
+	right: 100px;
+ 	transform: rotate(175deg);
+ 	z-index: 32;
+ }
+
+@keyframes yellow {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
+
+@keyframes .butterfly{
+	from {transform: translate(20);}
+	to {transform: translate(80%);}
+}
+
+@keyframes clouds {
+	from {transform: translate(0%);}
+	to {transform: translate(100%);}
+}
+@keyframes yellow {
+  from {background-color: yellow;}
+  to {background-color: pink;}
